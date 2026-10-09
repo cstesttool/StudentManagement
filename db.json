@@ -1,0 +1,17 @@
+{
+  "students": [
+    {
+      "id": "Ge3GYIEQ9Z8",
+      "name": "lokesh",
+      "course": "selenium",
+      "email": "lokesh@gmail.com"
+    },
+    {
+      "id": "Eaujzg94LKM",
+      "name": "anjali",
+      "course": "playwright",
+      "email": "anjali@gmail.com"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

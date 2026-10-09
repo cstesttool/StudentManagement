@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Student Management System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Management System</h1>
+            <p> Manage Student Easily</p>
+        </header>
+        <section class="dashboard">
+            <div class="stat-card">
+                <h3>Total Students</h3>
+                <p id="totalStudents">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Courses</h3>
+                <p id="totalCourses">0</p>
+            </div>
+        </section>
+        <section class="student-form">
+            <h2>Add Student</h2>
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="studentName">Student Name: </label>
+                    <input type="text" id="studentName" placeholder="Enter StudentName" />
+                    <small class="error-message" id="nameError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="studentCourse">Course: </label>
+                    <input type="text" id="studentCourse" placeholder="Enter Student Course" />
+                    <small class="error-message" id="courseError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="studentEmail">Email: </label>
+                    <input type="email" id="studentEmail" placeholder="Enter Student Email" />
+                    <small class="error-message" id="emailError"></small>
+                </div>
+                <button type="submit" id="addStudentBtn">Add Student</button>
+            </form>
+        </section>
+        <section class="search-section">
+            <h2>Search Student</h2>
+            <input type="text" id="searchStudent" placeholder="Search by Student Name" />
+        </section>
+        <section class="sort-section">
+            <label for="sortStudents">Sort Students</label>
+            <select id="sortStudents">
+                <option value="name-asc">Name A - Z</option>
+                <option value="name-desc">Name Z - A</option>
+                <option value="course-asc">Course A - Z</option>
+                <option value="course-desc">Course Z - A</option>
+            </select>
+        </section>
+        <section class="student-list">
+            <h2>Student List</h2>
+            <div id="studentContainer">
+                <p class="empty-message">
+                    No Students Yet
+                </p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
